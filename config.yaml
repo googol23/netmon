@@ -1,0 +1,26 @@
+# Existing v0.4 settings remain valid.
+host: 1.1.1.1
+port: 443
+interval: 5
+timeout: 1
+speed_interval: 120
+icmp_host: 1.1.1.1
+icmp_interval: 60
+icmp_count: 4
+
+# New v0.5 evidence monitoring (one echo per target per cycle).
+evidence_interval: 1
+loss_window: 60
+router: auto
+external_targets:
+  - 1.1.1.1
+  - 8.8.8.8
+
+# HTTPS service reachability (not video playback quality).
+services_enabled: true
+services_interval: 10
+services_timeout: 5
+services_targets:
+  # netflix: https://www.netflix.com/
+  youtube: https://www.youtube.com/
+  google: https://www.google.com/
